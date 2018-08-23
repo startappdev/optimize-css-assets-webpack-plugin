@@ -1,3 +1,5 @@
+This forke was created (from version 5.0.0) to fix (with a temp patch) the way that cssProcessorOptions is passed to cssnano (due to version upgrade), and to upgrade to a newer cssnano version (to solve some issues).
+
 # Optimize CSS Assets Webpack Plugin
 
 A Webpack plugin to optimize \ minimize CSS assets.
