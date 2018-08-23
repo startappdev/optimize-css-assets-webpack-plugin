@@ -59,7 +59,7 @@ class OptimizeCssAssetsWebpackPlugin extends LastCallWebpackPlugin {
       }
     }
     return this.options
-      .cssProcessor.process(css.source, processOptions)
+      .cssProcessor.process(css.source, processOptions, processOptions)
       .then(r => {
         if (processOptions.map && r.map && r.map.toString) {
           assets.setAsset(assetName + '.map', r.map.toString());
