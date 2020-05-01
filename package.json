@@ -21,7 +21,9 @@
   },
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "testEnvironment": "node",
@@ -31,7 +33,8 @@
   },
   "dependencies": {
     "cssnano": "^4.1.0",
-    "last-call-webpack-plugin": "^3.0.0"
+    "last-call-webpack-plugin": "^3.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -47,5 +50,6 @@
   },
   "peerDependencies": {
     "webpack": "^4.0.0"
-  }
+  },
+  "snyk": true
 }
